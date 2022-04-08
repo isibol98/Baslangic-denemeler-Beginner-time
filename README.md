@@ -4,6 +4,7 @@ Merhaba, bu bölümde öğrendiklerimi uygulamalı olarak çalıştığım zaman
 Paylaştığım kodları Türkçe ve İngilizce olarak paylaşmayı hedefliyorum.
 Gelecekte bu bölüme bakıp iyi ki denemekten vazgeçmedim diye düşünmeyi dilerim :)
 
+********************************************
 
 Hello, i will share my mini projects which i did during my learning under this title.
 I aim share codes on Turkish and English.
