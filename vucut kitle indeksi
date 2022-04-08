@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+
+
+
+main(){
+	setlocale(LC_ALL,"Turkish");
+	double boy, kilo, vki;
+	cout<<"Lütfen boyunuzu metre cinsinden giriniz:"<<endl;
+	cin>>boy;
+	cout<<"Lütfen kilonuzu kilogram cinsinden giriniz: "<<endl;
+	cin>>kilo;
+	vki=kilo/(boy*boy);
+		cout<<"Vücut Kitle İndeksiniz: "<<vki<<endl; 
+	if(vki<18.55){
+		cout<<"Dünya Sağlık Örgütü'ne Göre Kilonuz: Zayıf"<<endl;
+	} 
+	else if(vki<24.9 && vki>=18.5){
+		cout<<"Dünya Sağlık Örgütü'ne Göre Kilonuz: Normal"<<endl;
+	}
+	else if(vki<29.9 && vki>=24.9){
+		cout<<"Dünya Sağlık Örgütü'ne Göre Kilonuz: Fazla Kilolu"<<endl;
+	} 
+	else if(vki<39.9 && vki>=29.9){
+		cout<<"Dünya Sağlık Örgütü'ne Göre Kilonuz: Obez"<<endl;
+	}
+	else{
+		cout<<"Dünya Sağlık Örgütü'ne Göre Kilonuz: İleri Derece Obez"<<endl;
+	}
+	system("pause");
+}
