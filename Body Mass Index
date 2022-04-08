@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+main(){
+	setlocale(LC_ALL,"Turkish");
+	double height, weight, bodyMassIndex;
+	cout<<"Please enter your height in metres::"<<endl;
+	cin>>height;
+	cout<<"Please enter your weight in kilograms: "<<endl;
+	cin>>weight;
+	bodyMassIndex=weight/(height*height);
+		cout<<"Body Mass Index: "<<bodyMassIndex<<endl; 
+	if(bodyMassIndex<18.55){
+		cout<<"According to the World Health Organization Your Weight: Underweight"<<endl;
+	} 
+	else if(bodyMassIndex<24.9 && bodyMassIndex>=18.5){
+		cout<<"According to the World Health Organization Your Weight: Normal"<<endl;
+	}
+	else if(bodyMassIndex<29.9 && bodyMassIndex>=24.9){
+		cout<<"According to the World Health Organization Your Weight: Overweight"<<endl;
+	} 
+	else if(bodyMassIndex<39.9 && bodyMassIndex>=29.9){
+		cout<<"According to the World Health Organization Your Weight: Obese"<<endl;
+	}
+	else{
+		cout<<"Dünya Sağlık Örgütü'ne Göre Kilonuz: İleri Derece Obez"<<endl;
+	}
+	system("pause");
+}
