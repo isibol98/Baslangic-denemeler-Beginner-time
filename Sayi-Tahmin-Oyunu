@@ -7,7 +7,7 @@ main(){
 	int rastgeleSayi=rand();
 	int tahmin=0, sayi, can;
 	char tahminSiniri;
-	int kontrol;
+	int kontrol=0;
 	srand(time(NULL));
 	rastgeleSayi=rand()%100+1; 
 	cout<<"Sayı Tahmin Oyununa Hoşgeldiniz :). 0-100 aralığında tahmin yaparak sayıyı bulmaya çalışın! "<<endl;
@@ -36,7 +36,7 @@ main(){
 			can-=1;
 				if(can>0){
 					cout<<"Sayınızı küçültün."<<endl;
-		}
+	}
 	}
 		else{
 			kontrol=1;
