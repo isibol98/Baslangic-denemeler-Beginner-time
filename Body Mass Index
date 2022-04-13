@@ -23,7 +23,7 @@ main(){
 		cout<<"According to the World Health Organization Your Weight: Obese"<<endl;
 	}
 	else{
-		cout<<"Dünya Sağlık Örgütü'ne Göre Kilonuz: İleri Derece Obez"<<endl;
+		cout<<"According to the World Health Organization Your Weight: Severely obese"<<endl;
 	}
 	system("pause");
 }
