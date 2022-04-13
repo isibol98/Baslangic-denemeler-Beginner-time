@@ -1,0 +1,52 @@
+#include<iostream>
+#include<cstdlib>
+#include<locale>
+using namespace std;
+main(){
+	setlocale(LC_ALL,"Turkish");
+	int rastgeleSayi=rand();
+	int tahmin=0, sayi, can;
+	char tahminSiniri;
+	int kontrol;
+	srand(time(NULL));
+	rastgeleSayi=rand()%100+1; 
+	cout<<"Sayı Tahmin Oyununa Hoşgeldiniz :). 0-100 aralığında tahmin yaparak sayıyı bulmaya çalışın! "<<endl;
+	cout<<"Tahmin sınırı koymak ister misiniz? (E/H)"<<endl;
+	cin>>tahminSiniri;
+		if(tahminSiniri=='E'){
+			cout<<"Kaç tahmin hakkınız olsun?:"<<endl;
+			cin>>can;
+		}
+		else{
+			can=999;
+    		cout<<"Tahmin hakkınız sınırsız."<<endl;
+		}
+	while(can!=0){
+		tahmin++;
+		cout<<"Tahmin girin: ";
+		cin>>sayi;
+		if(sayi<rastgeleSayi){
+			can-=1;
+			if(can>0){
+				cout<<"Sayınızı yükseltin."<<endl;
+	}		else
+				break;
+		}
+		else if(sayi>rastgeleSayi){
+			can-=1;
+				if(can>0){
+					cout<<"Sayınızı küçültün."<<endl;
+		}
+	}
+		else{
+			kontrol=1;
+			break; 
+		}
+}
+if(kontrol!=1){
+	cout<<"Tahmin hakkınız kalmadı :(. Sayı:"<<rastgeleSayi;
+}
+else{
+	cout<<"Tebrikler!"<<endl<<tahmin<<". Tahminde bildiniz!";
+}
+}
