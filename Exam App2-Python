@@ -22,10 +22,11 @@ class Exam:
         question =self.getQuestion()
         print(f'Soru {self.questionIndex +1}: {question.text}')
         
+        choices = ['A', 'B', 'C', 'D']
         for q in range(len(choices)):
             print((choices[q]) + '-' + question.choices[q])
             
-        answer = (input('Your Answer: ')).upper
+        answer = (input('Your Answer: ')).upper()
         self.guess(answer)
         self.loadQuestion()
 
@@ -63,7 +64,6 @@ q3 = Question('8x8 = ?', ['16', '48', '64', '88'], 'C')
 q4 = Question('56/7 = ?', ['9', '7', '0', '8'], 'D')
 q5 = Question('42/21+8 =?', ['20', '0', '24', '10'], 'D')
 questions = [q1,q2,q3,q4,q5]
-choices = ['A', 'B', 'C', 'D']
 exam = Exam(questions)
 exam.displayQuestion()
 
